@@ -1,0 +1,35 @@
+### 2. `index.html`（放在專案最外層，網頁主架構）
+```html
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微醺酒類資料網 | Spirits & Mixology Guide</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🥃 微醺酒類資料網</h1>
+        <p>收錄經典基酒、利口酒特性與酒吧熱門調酒指南</p>
+        <div class="filter-buttons" id="filter-buttons">
+            <button class="filter-btn active" data-category="all">全部酒款</button>
+            <button class="filter-btn" data-category="基酒">基酒</button>
+            <button class="filter-btn" data-category="利口酒">利口酒</button>
+            <button class="filter-btn" data-category="經典調酒">經典調酒</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="spirits-grid" id="spirits-grid">
+            <!-- 卡片會由 app.js 自動讀取 spirits.json 生成 -->
+        </div>
+    </main>
+
+    <footer>
+        <p>提示：本網站由 AGENTS.md 規範驅動，可隨時透過 AI 擴充新酒譜。</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
