@@ -18,7 +18,7 @@
 2. 嚴格遵守以下 JSON 格式：
    ```json
    {
-     "id": "英文小寫短網址代稱 (例如 belvedere-vodka)",
+     "id": "英文小寫短網址代稱 (例如 vodka)",
      "name": "酒款中文名稱",
      "englishName": "酒款英文名稱",
      "category": "分類（僅限：基酒 / 利口酒 / 經典調酒）",
